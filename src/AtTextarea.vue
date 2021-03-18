@@ -109,12 +109,13 @@ export default {
         const el = this.$el.querySelector('textarea')
         const atEnd = offset + at.length // 从@后第一位开始
         const rect = getCaretCoordinates(el, atEnd)
+        const rightBorder = el.offsetWidth;
         this.atwho = {
           chunk,
           offset,
           list,
           atEnd,
-          x: rect.left,
+          x: rect.left + 180 > rightBorder ? rightBorder - 180 : rect.left,
           y: rect.top - 4,
           cur: 0, // todo: 尽可能记录
         }
