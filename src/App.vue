@@ -8,7 +8,7 @@
 
       <!-- custom: with avatars -->
       <template v-slot:item="s">
-        <img class="avatar" :src="s.item.avatar">
+        <img :src="s.item.avatar">
         <span v-text="s.item.name"></span>
       </template>
 
@@ -68,11 +68,20 @@
 </template>
 
 <script>
-// import At from 'vue-at'
-// import At from '../dist/vue-at'
-// import AtTa from '../dist/vue-at-textarea'
 import At from './At.vue'
 import AtTa from './AtTextarea.vue'
+
+// testing dist
+// import At from '../dist/vue-at'
+// import AtTa from '../dist/vue-at-textarea'
+
+// testing npm_pack
+// import At from '../package/dist/vue-at'
+// import AtTa from '../package/dist/vue-at-textarea'
+
+// testing node_modules
+// import At from 'vue-at'
+// import AtTa from 'vue-at/dist/vue-at-textarea'
 
 let members = [
   /* eslint-disable */
@@ -181,7 +190,11 @@ textarea {
   height: 200px;
 }
 
-.avatar {
+.editor img {
+  max-width: 10em;
+  vertical-align: bottom;
+}
+.tag .avatar {
   max-width: 1em;
   vertical-align: middle;
 }
