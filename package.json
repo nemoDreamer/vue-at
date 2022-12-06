@@ -11,9 +11,6 @@
     "prepublish": "npm run build"
   },
   "main": "dist/vue-at.js",
-  "files": [
-    "dist"
-  ],
   "engines": {
     "node": ">= 14.x"
   },
