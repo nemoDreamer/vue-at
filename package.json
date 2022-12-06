@@ -3,7 +3,7 @@
   "description": "At.js for Vue",
   "version": "2.5.1",
   "author": "Fritz Lin <uxfritz@163.com>",
-  "repository": "https://github.com/fritx/vue-at",
+  "repository": "https://github.com/syncsketch/vue-at",
   "scripts": {
     "dev": "webpack serve --config webpack/demo --open --inline --hot --mode development",
     "demo": "webpack --config webpack/demo --progress --mode development",
